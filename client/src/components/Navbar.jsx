@@ -1,4 +1,5 @@
 
+
 import { NavLink, Link } from 'react-router-dom';
 import { Utensils, Menu, X } from 'lucide-react';
 import { useState } from 'react';
@@ -12,7 +13,8 @@ function Navbar() {
     { name: 'Student Portal', path: '/student' },
     { name: 'Weekly Menu', path: '/menu' },
     { name: 'Feedback', path: '/feedback' },
-    { name: 'Committee', path: '/committee' }
+    { name: 'Committee', path: '/committee' },
+    { name: 'Admin Portal', path: '/admin' }
   ];
 
   return (
@@ -35,7 +37,9 @@ function Navbar() {
               to={link.path}
               end={link.path === '/'}
               onClick={() => setMenuOpen(false)}
-              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
             >
               {link.name}
             </NavLink>

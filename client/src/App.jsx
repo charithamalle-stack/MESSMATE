@@ -1,10 +1,15 @@
 
+
+
+
+
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import StudentDashboard from './pages/StudentDashboard';
 import WeeklyMenu from './pages/WeeklyMenu';
 import Feedback from './pages/Feedback';
 import CommitteeDashboard from './pages/CommitteeDashboard';
+import AdminPortal from './pages/AdminPortal';
 
 function Home() {
   return (
@@ -103,6 +108,7 @@ function App() {
         <Route path="/menu" element={<WeeklyMenu />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/committee" element={<CommitteeDashboard />} />
+        <Route path="/admin" element={<AdminPortal />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
@@ -110,6 +116,3 @@ function App() {
 }
 
 export default App;
-
-
-
