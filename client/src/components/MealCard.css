@@ -1,0 +1,128 @@
+
+.meal-card {
+  overflow: hidden;
+  min-width: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.meal-card-image {
+  position: relative;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #e5eee2, #f4eddd);
+}
+
+.meal-placeholder {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--green-800);
+}
+
+.meal-category {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--green-900);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.meal-card-content {
+  padding: 18px;
+}
+
+.meal-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--green-700);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meal-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.meal-card-content h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.meal-description {
+  min-height: 38px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.meal-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.meal-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--amber);
+  font-size: 13px;
+}
+
+.meal-rating strong {
+  color: var(--text-primary);
+}
+
+.meal-rating span {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.meal-rate-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--green-100);
+  color: var(--green-900);
+  font-size: 11px;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.meal-rate-button:hover {
+  background: #d4e5d5;
+}

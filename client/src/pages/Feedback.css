@@ -1,0 +1,369 @@
+
+.feedback-topbar {
+  min-height: 70px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #26382b;
+  color: #d0dfd3;
+  font-size: 14px;
+  font-weight: 600;
+  background: #080d09;
+}
+
+.feedback-page {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 42px 32px 70px;
+  color: #f4fff6;
+}
+
+.feedback-heading {
+  margin-bottom: 32px;
+  max-width: 650px;
+}
+
+.feedback-heading h1 {
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+  color: #f4fff6;
+  font-weight: 800;
+}
+
+.feedback-heading p {
+  color: #c0d0c3;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.feedback-form,
+.feedback-success {
+  background: #111a13;
+  border: 1px solid #2d4933;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #f4fff6;
+}
+
+.feedback-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #2b4030;
+}
+
+.feedback-form-header > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #79e69a;
+}
+
+.feedback-form-header h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #f4fff6;
+  font-weight: 800;
+}
+
+.feedback-form-header > span {
+  color: #8ff0a9;
+  background: #183d24;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.feedback-field {
+  margin-bottom: 30px;
+}
+
+.feedback-field > label {
+  display: block;
+  color: #f2fff4;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+/* Date, select and other form controls */
+.feedback-field input[type="date"],
+.feedback-field input[type="text"],
+.feedback-field input[type="email"],
+.feedback-field select,
+.feedback-field textarea,
+.feedback-name-input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #45634b;
+  border-radius: 11px;
+  padding: 13px 15px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f4fff6 !important;
+  background: #0a120c !important;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-field input[type="date"] {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+.feedback-field input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.feedback-field select option {
+  background: #111a13;
+  color: #f4fff6;
+}
+
+.feedback-field input:focus,
+.feedback-field select:focus,
+.feedback-field textarea:focus,
+.feedback-name-input:focus {
+  border-color: #79e69a;
+  box-shadow: 0 0 0 3px rgba(121, 230, 154, 0.13);
+}
+
+.feedback-choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feedback-choice {
+  padding: 11px 17px;
+  border: 1px solid #405b46;
+  border-radius: 10px;
+  background: #17231a;
+  color: #e0eee3;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.feedback-choice:hover {
+  border-color: #79e69a;
+  color: #9af3b0;
+  background: #1b3020;
+}
+
+.feedback-choice.active {
+  background: #194329;
+  border: 1px solid #79e69a;
+  color: #a6f5b9;
+  font-weight: 800;
+}
+
+.feedback-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedback-stars button {
+  border: none;
+  background: transparent;
+  color: #657168;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.feedback-stars button:hover {
+  transform: scale(1.15);
+}
+
+.feedback-stars button.selected {
+  color: #ffd166;
+}
+
+.feedback-stars span {
+  color: #d0dfd3;
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.feedback-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.feedback-field textarea::placeholder,
+.feedback-name-input::placeholder {
+  color: #a6b7aa !important;
+  opacity: 1;
+}
+
+.feedback-helper {
+  display: block;
+  margin-top: 9px;
+  color: #bdcdbf;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.feedback-identity {
+  background: #15251a;
+  border: 1px solid #35553c;
+  border-radius: 13px;
+  padding: 22px;
+  margin-bottom: 26px;
+}
+
+.feedback-identity-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #79e69a;
+  margin-bottom: 18px;
+}
+
+.feedback-identity-heading h3 {
+  color: #f4fff6;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.feedback-identity-heading p {
+  color: #c0d0c3;
+  font-size: 12px;
+  margin: 0;
+}
+
+.anonymous-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f0fff3;
+  cursor: pointer;
+}
+
+.anonymous-toggle input {
+  width: 17px;
+  height: 17px;
+  accent-color: #79e69a;
+  cursor: pointer;
+}
+
+.feedback-name-input {
+  margin-top: 15px;
+  background: #0a120c !important;
+}
+
+.feedback-privacy-note {
+  font-size: 11px;
+  color: #bdcdbf;
+  line-height: 1.6;
+  margin: 16px 0 0;
+}
+
+.feedback-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #79e69a;
+  border-radius: 10px;
+  padding: 13px 24px;
+  background: #17652e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.feedback-submit:hover:not(:disabled) {
+  background: #258c43;
+  transform: translateY(-1px);
+}
+
+.feedback-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback-success {
+  text-align: center;
+  padding: 55px 30px;
+}
+
+.feedback-success > svg {
+  color: #79e69a;
+  margin-bottom: 16px;
+}
+
+.feedback-success h2 {
+  font-size: 26px;
+  color: #f4fff6;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.feedback-success p {
+  color: #c0d0c3;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Ensure text remains readable across the feedback page */
+.feedback-page input,
+.feedback-page select,
+.feedback-page textarea,
+.feedback-page button {
+  font-family: inherit;
+}
+
+.feedback-page input[type="date"]::-webkit-datetime-edit {
+  color: #f4fff6;
+}
+
+@media (max-width: 650px) {
+  .feedback-topbar {
+    padding: 0 18px;
+  }
+
+  .feedback-page {
+    padding: 30px 16px 50px;
+  }
+
+  .feedback-form,
+  .feedback-success {
+    padding: 22px 17px;
+  }
+
+  .feedback-form-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feedback-choice {
+    padding: 10px 13px;
+  }
+
+  .feedback-stars {
+    flex-wrap: wrap;
+  }
+}
+

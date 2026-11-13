@@ -1,0 +1,133 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+  width: min(1280px, calc(100% - 48px));
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-shrink: 0;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--green-900);
+  color: white;
+}
+
+.navbar-brand strong {
+  display: block;
+  color: var(--green-950);
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.navbar-brand small {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-secondary);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link {
+  padding: 10px 13px;
+  border-radius: 9px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  background: var(--green-50);
+  color: var(--green-900);
+}
+
+.nav-link.active {
+  background: var(--green-100);
+  color: var(--green-900);
+}
+
+.navbar-menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--green-900);
+}
+
+@media (max-width: 850px) {
+  .navbar-inner {
+    width: calc(100% - 32px);
+  }
+
+  .navbar-menu-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    padding: 14px 16px 18px;
+    flex-direction: column;
+    align-items: stretch;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+  }
+
+  .navbar-links.navbar-links-open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 13px 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar-brand strong {
+    font-size: 16px;
+  }
+
+  .navbar-brand small {
+    font-size: 8px;
+  }
+}
